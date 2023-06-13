@@ -1,0 +1,9 @@
+{
+    "apps": {
+        "dataflow0": "data/dataflow0_conf",
+        "dfo": "data/dfo_conf",
+        "fakehsi": "data/fakehsi_conf",
+        "runp04srv030flx0": "data/runp04srv030flx0_conf",
+        "trigger": "data/trigger_conf"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "build_info": {
+        "build time": "Tue 13 Jun 12:26:37 CEST 2023",
+        "git branch": "feature/k8s-revival",
+        "git commit author": "Alessandro Thea",
+        "git commit description": "Improving conf schema",
+        "git commit hash": "69dd0adb86d731a14c2e6f8e84690fc6cc544993",
+        "git commit time": "Sat Jun 10 00:53:08 2023 +0200",
+        "hostname for build": "np04-srv-019",
+        "local repo dir": "/nfs/home/plasorak/dd-N23-06-09/swdir/sourcecode/daqconf",
+        "uncommitted changes": "",
+        "user for build": "plasorak"
+    },
+    "command_line": "/nfs/home/plasorak/dd-N23-06-09/swdir/install/daqconf/bin/daqconf_multiru_gen -m daq-systemtest/config/emulated_systems/emulated_wib2_system_DetReadoutMap.json -c daq-systemtest/config/emulated_systems/emulated_wib2_system_k8s.json emulated_wib2_system_k8s",
+    "config_file": "daq-systemtest/config/emulated_systems/emulated_wib2_system_k8s.json",
+    "daqconf_exe_dir": "/nfs/home/plasorak/dd-N23-06-09/swdir/install/daqconf/bin"
+}

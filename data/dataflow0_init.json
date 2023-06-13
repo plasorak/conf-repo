@@ -1,0 +1,121 @@
+{
+    "connections": [
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "Fragment",
+                "session": "",
+                "uid": "fragments_to_dataflow0"
+            },
+            "uri": "tcp://dataflow0:12348"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "TriggerDecision",
+                "session": "",
+                "uid": "trigger_decision_0"
+            },
+            "uri": "tcp://dataflow0:12353"
+        }
+    ],
+    "connectivity_service_interval_ms": 1000,
+    "modules": [
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "trigger_decision_input",
+                        "uid": "trigger_decision_0"
+                    },
+                    {
+                        "name": "request_output_HW_Signals_Interface_0x00000000",
+                        "uid": "data_requests_for_HW_Signals_Interface_0x00000000"
+                    },
+                    {
+                        "name": "request_output_Trigger_0x00000000",
+                        "uid": "data_requests_for_Trigger_0x00000000"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000000",
+                        "uid": "data_requests_for_Detector_Readout_0x00000000"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000002",
+                        "uid": "data_requests_for_Detector_Readout_0x00000002"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000004",
+                        "uid": "data_requests_for_Detector_Readout_0x00000004"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000006",
+                        "uid": "data_requests_for_Detector_Readout_0x00000006"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000008",
+                        "uid": "data_requests_for_Detector_Readout_0x00000008"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000001",
+                        "uid": "data_requests_for_Detector_Readout_0x00000001"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000003",
+                        "uid": "data_requests_for_Detector_Readout_0x00000003"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000005",
+                        "uid": "data_requests_for_Detector_Readout_0x00000005"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000007",
+                        "uid": "data_requests_for_Detector_Readout_0x00000007"
+                    },
+                    {
+                        "name": "request_output_Detector_Readout_0x00000009",
+                        "uid": "data_requests_for_Detector_Readout_0x00000009"
+                    },
+                    {
+                        "name": "data_fragment_all",
+                        "uid": "fragments_to_dataflow0"
+                    },
+                    {
+                        "name": "trigger_record_output",
+                        "uid": "trigger_records"
+                    }
+                ]
+            },
+            "inst": "trb",
+            "plugin": "TriggerRecordBuilder"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "token_output",
+                        "uid": "triginh"
+                    },
+                    {
+                        "name": "trigger_record_input",
+                        "uid": "trigger_records"
+                    }
+                ]
+            },
+            "inst": "datawriter_0",
+            "plugin": "DataWriter"
+        }
+    ],
+    "queues": [
+        {
+            "capacity": 11,
+            "id": {
+                "data_type": "TriggerRecord",
+                "session": "",
+                "uid": "trigger_records"
+            },
+            "queue_type": "kFollySPSCQueue"
+        }
+    ],
+    "use_connectivity_service": true
+}

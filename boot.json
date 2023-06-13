@@ -1,0 +1,155 @@
+{
+    "apps": {
+        "dataflow0": {
+            "affinity": [],
+            "anti-affinity": [],
+            "exec": "daq_application_k8s",
+            "mounted_dirs": [
+                {
+                    "in_pod_location": "{DBT_INSTALL_DIR}",
+                    "name": "dunedaq-swdir",
+                    "physical_location": "{DBT_INSTALL_DIR}",
+                    "read_only": false
+                },
+                {
+                    "in_pod_location": "/data0/test",
+                    "name": "raw-data-0",
+                    "physical_location": "/data0/test",
+                    "read_only": false
+                }
+            ],
+            "node-selection": [
+                {
+                    "kubernetes.io/hostname": [
+                        "np04-srv-004"
+                    ],
+                    "strict": true
+                }
+            ],
+            "port": 3333,
+            "resources": {}
+        },
+        "dfo": {
+            "affinity": [],
+            "anti-affinity": [],
+            "exec": "daq_application_k8s",
+            "mounted_dirs": [
+                {
+                    "in_pod_location": "{DBT_INSTALL_DIR}",
+                    "name": "dunedaq-swdir",
+                    "physical_location": "{DBT_INSTALL_DIR}",
+                    "read_only": false
+                }
+            ],
+            "node-selection": [],
+            "port": 3333,
+            "resources": {}
+        },
+        "fakehsi": {
+            "affinity": [],
+            "anti-affinity": [],
+            "exec": "daq_application_k8s",
+            "mounted_dirs": [
+                {
+                    "in_pod_location": "{DBT_INSTALL_DIR}",
+                    "name": "dunedaq-swdir",
+                    "physical_location": "{DBT_INSTALL_DIR}",
+                    "read_only": false
+                }
+            ],
+            "node-selection": [],
+            "port": 3333,
+            "resources": {}
+        },
+        "runp04srv030flx0": {
+            "affinity": [],
+            "anti-affinity": [],
+            "exec": "daq_application_k8s",
+            "mounted_dirs": [
+                {
+                    "in_pod_location": "{DBT_INSTALL_DIR}",
+                    "name": "dunedaq-swdir",
+                    "physical_location": "{DBT_INSTALL_DIR}",
+                    "read_only": false
+                }
+            ],
+            "node-selection": [
+                {
+                    "kubernetes.io/hostname": [
+                        "np04-srv-030"
+                    ],
+                    "strict": true
+                }
+            ],
+            "port": 3333,
+            "resources": {
+                "felix.cern/flx0-data": "1",
+                "memory": "64Gi"
+            }
+        },
+        "trigger": {
+            "affinity": [],
+            "anti-affinity": [],
+            "exec": "daq_application_k8s",
+            "mounted_dirs": [
+                {
+                    "in_pod_location": "{DBT_INSTALL_DIR}",
+                    "name": "dunedaq-swdir",
+                    "physical_location": "{DBT_INSTALL_DIR}",
+                    "read_only": false
+                }
+            ],
+            "node-selection": [],
+            "port": 3333,
+            "resources": {}
+        }
+    },
+    "env": {
+        "DUNEDAQ_ERS_DEBUG_LEVEL": "getenv_ifset",
+        "DUNEDAQ_ERS_ERROR": "erstrace,throttle,lstdout,erskafka(monkafka.cern.ch:30092)",
+        "DUNEDAQ_ERS_FATAL": "erstrace,lstdout,erskafka(monkafka.cern.ch:30092)",
+        "DUNEDAQ_ERS_INFO": "erstrace,throttle,lstdout,erskafka(monkafka.cern.ch:30092)",
+        "DUNEDAQ_ERS_STREAM_LIBS": "erskafka",
+        "DUNEDAQ_ERS_VERBOSITY_LEVEL": "getenv:1",
+        "DBT_INSTALL_DIR": "getenv",
+        "DUNEDAQ_ERS_WARNING": "erstrace,throttle,lstdout,erskafka(monkafka.cern.ch:30092)"
+    },
+    "exec": {
+        "daq_application_k8s": {
+            "args": [
+                "--name",
+                "{APP_NAME}",
+                "-c",
+                "{CMD_FAC}",
+                "-i",
+                "{INFO_SVC}",
+                "--configurationService",
+                "{CONF_LOC}"
+            ],
+            "cmd": [
+                "daq_application"
+            ],
+            "comment": "Application profile using PATH variables (lower start time)",
+            "env": {
+                "CMD_FAC": "rest://localhost:{APP_PORT}",
+                "CONNECTION_PORT": "30005",
+                "CONNECTION_SERVER": "np04-srv-023",
+                "INFO_SVC": "kafka://monkafka.cern.ch:30092/opmon",
+                "TRACE_FILE": "getenv:/tmp/trace_buffer_{APP_HOST}_{DUNEDAQ_PARTITION}"
+            },
+            "image": "np04docker.cern.ch/ghcr/dune-daq/c8-spack:latest"
+        }
+    },
+    "external_connections": [],
+    "order": [
+        "runp04srv030flx0",
+        "dfo",
+        "fakehsi",
+        "trigger",
+        "dataflow0"
+    ],
+    "response_listener": {
+        "port": 56789
+    },
+    "rte_script": "{DBT_INSTALL_DIR}/daq_app_rte.sh"
+}

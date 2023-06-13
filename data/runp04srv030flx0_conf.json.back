@@ -1,0 +1,622 @@
+{
+    "modules": [
+        {
+            "data": {
+                "card_id": 0,
+                "chunk_trailer_size": 32,
+                "dma_block_size_kb": 4,
+                "dma_block_threshold": 10,
+                "dma_id": 0,
+                "dma_margin_blocks": 4,
+                "dma_memory_size_gb": 4,
+                "interrupt_mode": false,
+                "links_enabled": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "logical_unit": 0,
+                "num_sources": 1,
+                "numa_id": 0,
+                "poll_time": 5000
+            },
+            "match": "flxcard_0"
+        },
+        {
+            "data": {
+                "card_id": 0,
+                "chunk_trailer_size": 32,
+                "dma_block_size_kb": 4,
+                "dma_block_threshold": 10,
+                "dma_id": 0,
+                "dma_margin_blocks": 4,
+                "dma_memory_size_gb": 4,
+                "interrupt_mode": false,
+                "links_enabled": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "logical_unit": 1,
+                "num_sources": 1,
+                "numa_id": 0,
+                "poll_time": 5000
+            },
+            "match": "flxcard_1"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 0
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 0,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 0,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 0,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_0.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 0,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_0"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 2
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 0,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 1,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 2,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_2.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 2,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_2"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 4
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 0,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 2,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 4,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_4.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 4,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_4"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 6
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 0,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 3,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 6,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_6.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 6,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_6"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 8
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 0,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 4,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 8,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_8.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 8,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_8"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 1
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 1,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 0,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 1,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_1.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 1,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_1"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 3
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 1,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 1,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 3,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_3.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 3,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_3"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 5
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 1,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 2,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 5,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_5.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 5,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_5"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 7
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 1,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 3,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 7,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_7.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 7,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_7"
+        },
+        {
+            "data": {
+                "latencybufferconf": {
+                    "latency_buffer_alignment_size": 4096,
+                    "latency_buffer_intrinsic_allocator": false,
+                    "latency_buffer_numa_aware": false,
+                    "latency_buffer_numa_node": 0,
+                    "latency_buffer_preallocation": false,
+                    "latency_buffer_size": 499968,
+                    "source_id": 9
+                },
+                "rawdataprocessorconf": {
+                    "channel_map_name": "None",
+                    "clock_speed_hz": 62500000,
+                    "crate_id": 1,
+                    "emulator_mode": true,
+                    "enable_tpg": false,
+                    "error_counter_threshold": 100,
+                    "error_reset_freq": 10000,
+                    "link_id": 1,
+                    "postprocess_queue_sizes": 10000,
+                    "slot_id": 4,
+                    "source_id": 0,
+                    "tp_timeout": 218750,
+                    "tpg_algorithm": "SimpleThreshold",
+                    "tpg_channel_mask": [],
+                    "tpg_threshold": 5
+                },
+                "readoutmodelconf": {
+                    "fake_trigger_flag": 0,
+                    "send_partial_fragment_if_available": false,
+                    "source_id": 9,
+                    "source_queue_timeout_ms": 10,
+                    "tpset_min_latency_ticks": 3125000,
+                    "tpset_transmission_rate_hz": 2000
+                },
+                "requesthandlerconf": {
+                    "compression_algorithm": "None",
+                    "det_id": 3,
+                    "enable_raw_recording": false,
+                    "fragment_queue_timeout_ms": 100,
+                    "fragment_send_timeout_ms": 10,
+                    "latency_buffer_size": 499968,
+                    "num_request_handling_threads": 4,
+                    "output_file": "./output_np04srv030flx0_9.out",
+                    "pop_limit_pct": 0.8,
+                    "pop_size_pct": 0.1,
+                    "request_timeout_ms": 1000,
+                    "source_id": 9,
+                    "stream_buffer_size": 8388608,
+                    "use_o_direct": true,
+                    "warn_about_empty_buffer": true,
+                    "warn_on_timeout": true
+                }
+            },
+            "match": "datahandler_9"
+        }
+    ]
+}

@@ -1,0 +1,536 @@
+{
+    "connections": [
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000000"
+            },
+            "uri": "tcp://runp04srv030flx0:12354"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000002"
+            },
+            "uri": "tcp://runp04srv030flx0:12355"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000004"
+            },
+            "uri": "tcp://runp04srv030flx0:12356"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000006"
+            },
+            "uri": "tcp://runp04srv030flx0:12357"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000008"
+            },
+            "uri": "tcp://runp04srv030flx0:12358"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000001"
+            },
+            "uri": "tcp://runp04srv030flx0:12359"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000003"
+            },
+            "uri": "tcp://runp04srv030flx0:12360"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000005"
+            },
+            "uri": "tcp://runp04srv030flx0:12361"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000007"
+            },
+            "uri": "tcp://runp04srv030flx0:12362"
+        },
+        {
+            "connection_type": "kSendRecv",
+            "id": {
+                "data_type": "DataRequest",
+                "session": "",
+                "uid": "data_requests_for_Detector_Readout_0x00000009"
+            },
+            "uri": "tcp://runp04srv030flx0:12363"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_0"
+            },
+            "uri": "tcp://runp04srv030flx0:12365"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_2"
+            },
+            "uri": "tcp://runp04srv030flx0:12366"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_4"
+            },
+            "uri": "tcp://runp04srv030flx0:12367"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_6"
+            },
+            "uri": "tcp://runp04srv030flx0:12368"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_8"
+            },
+            "uri": "tcp://runp04srv030flx0:12369"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_1"
+            },
+            "uri": "tcp://runp04srv030flx0:12370"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_3"
+            },
+            "uri": "tcp://runp04srv030flx0:12371"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_5"
+            },
+            "uri": "tcp://runp04srv030flx0:12372"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_7"
+            },
+            "uri": "tcp://runp04srv030flx0:12373"
+        },
+        {
+            "connection_type": "kPubSub",
+            "id": {
+                "data_type": "TimeSync",
+                "session": "",
+                "uid": "timesync_ru_9"
+            },
+            "uri": "tcp://runp04srv030flx0:12374"
+        }
+    ],
+    "connectivity_service_interval_ms": 1000,
+    "modules": [
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "output_0",
+                        "uid": "wib2_link_0"
+                    },
+                    {
+                        "name": "output_2",
+                        "uid": "wib2_link_2"
+                    },
+                    {
+                        "name": "output_4",
+                        "uid": "wib2_link_4"
+                    },
+                    {
+                        "name": "output_1",
+                        "uid": "wib2_link_1"
+                    },
+                    {
+                        "name": "output_3",
+                        "uid": "wib2_link_3"
+                    }
+                ]
+            },
+            "inst": "flxcard_0",
+            "plugin": "FelixCardReader"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "output_6",
+                        "uid": "wib2_link_6"
+                    },
+                    {
+                        "name": "output_8",
+                        "uid": "wib2_link_8"
+                    },
+                    {
+                        "name": "output_5",
+                        "uid": "wib2_link_5"
+                    },
+                    {
+                        "name": "output_7",
+                        "uid": "wib2_link_7"
+                    },
+                    {
+                        "name": "output_9",
+                        "uid": "wib2_link_9"
+                    }
+                ]
+            },
+            "inst": "flxcard_1",
+            "plugin": "FelixCardReader"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_0"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000000"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_0"
+                    }
+                ]
+            },
+            "inst": "datahandler_0",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_2"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000002"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_2"
+                    }
+                ]
+            },
+            "inst": "datahandler_2",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_4"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000004"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_4"
+                    }
+                ]
+            },
+            "inst": "datahandler_4",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_6"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000006"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_6"
+                    }
+                ]
+            },
+            "inst": "datahandler_6",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_8"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000008"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_8"
+                    }
+                ]
+            },
+            "inst": "datahandler_8",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_1"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000001"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_1"
+                    }
+                ]
+            },
+            "inst": "datahandler_1",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_3"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000003"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_3"
+                    }
+                ]
+            },
+            "inst": "datahandler_3",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_5"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000005"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_5"
+                    }
+                ]
+            },
+            "inst": "datahandler_5",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_7"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000007"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_7"
+                    }
+                ]
+            },
+            "inst": "datahandler_7",
+            "plugin": "DataLinkHandler"
+        },
+        {
+            "data": {
+                "conn_refs": [
+                    {
+                        "name": "timesync_output",
+                        "uid": "timesync_ru_9"
+                    },
+                    {
+                        "name": "request_input",
+                        "uid": "data_requests_for_Detector_Readout_0x00000009"
+                    },
+                    {
+                        "name": "raw_input",
+                        "uid": "wib2_link_9"
+                    }
+                ]
+            },
+            "inst": "datahandler_9",
+            "plugin": "DataLinkHandler"
+        }
+    ],
+    "queues": [
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_0"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_2"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_4"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_1"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_3"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_6"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_8"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_5"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_7"
+            },
+            "queue_type": "kFollySPSCQueue"
+        },
+        {
+            "capacity": 100000,
+            "id": {
+                "data_type": "WIB2Frame",
+                "session": "",
+                "uid": "wib2_link_9"
+            },
+            "queue_type": "kFollySPSCQueue"
+        }
+    ],
+    "use_connectivity_service": true
+}
